@@ -31,7 +31,7 @@ const MealsNavigator = createStackNavigator(
 
 const tabScreenConfig = {
     Meals: {
-      screen: MealsNavigator,
+      screen: FavoritesScreen,
       navigationOptions: {
         tabBarIcon: tabInfo => {
           return (
@@ -42,7 +42,7 @@ const tabScreenConfig = {
       }
     },
     Favorites: {
-      screen: FavoritesScreen,
+      screen: CategoriesScreen,
       navigationOptions: {
         tabBarIcon: tabInfo => {
           return <Ionicons name="ios-star" size={25} color={tabInfo.tintColor} />;
