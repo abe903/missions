@@ -1,19 +1,31 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { Image, View, FlatList, Text, StyleSheet } from 'react-native';
+import { CATEGORIES } from '../data/dummy-data';
+import CategoryTile from '../components/categoryTile';
+
 
 const FavoritesScreen = props => {
+    const renderGridItem = itemData => {
+        return (
+     
+            <View style={styles.gridItem}>
+            <Text>{itemData.item.title}</Text>
+            </View>
+        
+        )}
     return (
-        <View style={styles.screen}>
-            <Text>The Categories Screen</Text>
-        </View>
+        <FlatList data={CATEGORIES} renderItem={renderGridItem} numColumns={2}/>
     )
 };
 
 const styles = StyleSheet.create({
-    screen: {
+    gridItem: {
+        paddingTop: 120,
         flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center'
+        margin: 15,
+        height: 150,
+        borderColor: "#20232a",
+        backgroundColor:  'blue'
     }
 });
 

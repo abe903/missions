@@ -25,8 +25,8 @@ const CategoriesScreen = props => {
 
 const styles = StyleSheet.create({
     image: {
-        width: 90,
-        height: 40
+        width: 200,
+        height: 140,
     },
     screen: {
         flex: 1,
