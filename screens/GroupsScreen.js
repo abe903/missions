@@ -1,13 +1,13 @@
 import React from 'react';
 import { View, Text, Button, StyleSheet, ImageBackground } from 'react-native';
 
-const CategoriesScreen = props => {
+const GroupsScreen = props => {
     
     
 
     return (
         <View style={styles.screen}>
-            <Text>Photos Page</Text>
+            <Text>Groups Page</Text>
           
         </View>
     )
@@ -25,4 +25,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default CategoriesScreen;
+export default GroupsScreen;

@@ -9,7 +9,7 @@ const FavoritesScreen = props => {
         return (
      
             <View style={styles.gridItem}>
-            <Text>{itemData.item.title}</Text>
+            <Text>Events Page</Text>
             </View>
         
         )}
