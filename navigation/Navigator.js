@@ -11,6 +11,7 @@ import { Ionicons } from '@expo/vector-icons';
 import CategoriesScreen from '../screens/CategoriesScreen';
 import CategoryMealsScreen from '../screens/CategoryMealsScreen';
 import FavoritesScreen from '../screens/FavoritesScreen';
+import GroupsScreen from '../screens/GroupsScreen';
 
 import Colors from '../constants/Colors';
 
@@ -26,6 +27,9 @@ const MealsNavigator = createStackNavigator(
     },
     FavoriteMeals: {
         screen: FavoritesScreen
+    },
+    Groups: {
+        screen: GroupsScreen
       }
   },
 );
@@ -36,7 +40,7 @@ const MealsFavTabNavigator = createBottomTabNavigator({
         return <Ionicons name='home-outline' size={23} color={tabInfo.tintColor}/>
       }
     } },
-    Favorites: {screen: CategoryMealsScreen, navigationOptions: {
+    Favorites: {screen: CategoriesScreen, navigationOptions: {
       tabBarIcon: (tabInfo) => {
         return <Ionicons name='camera-outline' size={23} color={tabInfo.tintColor}/>
       }
@@ -46,7 +50,7 @@ const MealsFavTabNavigator = createBottomTabNavigator({
         return <Ionicons name='book-outline' size={23} color={tabInfo.tintColor}/>
       }
     }},
-    Events: {screen: FavoritesScreen, navigationOptions: {
+    Events: {screen: GroupsScreen, navigationOptions: {
       tabBarIcon: (tabInfo) => {
         return <Ionicons name='person-outline' size={23} color={tabInfo.tintColor}/>
       }

@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
  
     },
     item: {
-      backgroundColor: 'f4f9f9',
+      backgroundColor: '#f4f9f9',
       padding: 20,
       paddingLeft: 70,
       paddingRight: 70,
